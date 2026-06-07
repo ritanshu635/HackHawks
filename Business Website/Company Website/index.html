@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Bloom Connect</title>
+    <meta name="description" content="Carbon Credit Trading Platform" />
+    <meta name="author" content="Carbon Bloom Connect" />
+
+    <meta property="og:title" content="Carbon Bloom Connect" />
+    <meta property="og:description" content="Carbon Credit Trading Platform" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Buffer polyfill for ethers.js -->
+    <script>
+      if (typeof global === 'undefined') {
+        var global = globalThis;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

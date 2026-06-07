@@ -1,0 +1,23 @@
+{
+  "name": "carbon-bloom-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Carbon Bloom Connect synchronization with Green Ledger India",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run contracts/deploy.js --network sepolia",
+    "deploy:local": "hardhat run contracts/deploy.js --network localhost",
+    "verify": "hardhat verify --network sepolia",
+    "test": "hardhat test",
+    "node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.2",
+    "@openzeppelin/contracts": "^4.9.3",
+    "hardhat": "^2.17.1",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
